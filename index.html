@@ -1,18 +1,132 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Servidor UIDE Hub</title>
-  <style>
-    body{font-family:system-ui,Arial;margin:60px auto;max-width:900px;padding:0 16px}
-    .box{border:1px solid #eee;border-radius:16px;padding:24px}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UIDE TIC Projects | Innovación y Tecnología</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@300;500;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="description" content="Portal de proyectos de la facultad de TICs de la UIDE.">
 </head>
+
 <body>
-  <div class="box">
-    <h1>Servidor en configuración rfam</h1>
-    <p>Este servidor está siendo preparado para despliegue de proyectos académicos.</p>
-  </div>
+
+    <nav class="navbar">
+        <div class="logo">UIDE <span class="highlight">TICs</span></div>
+        <ul class="nav-links">
+            <li><a href="#hero">Inicio</a></li>
+            <li><a href="#materias">Materias</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto" class="btn-primary">Contacto</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <header id="hero" class="hero-section">
+        <div class="hero-content">
+            <h1 class="fade-in-up">Futuro <span class="gradient-text">Tecnológico</span></h1>
+            <p class="fade-in-up delay-1">Explora la innovación de nuestros estudiantes en la UIDE.</p>
+            <div class="cta-group fade-in-up delay-2">
+                <a href="#proyectos" class="btn-primary">Ver Proyectos</a>
+                <a href="#materias" class="btn-secondary">Explorar Materias</a>
+            </div>
+        </div>
+        <div class="hero-bg"></div>
+    </header>
+
+    <section id="materias" class="section">
+        <div class="container">
+            <h2 class="section-title">Áreas de <span class="highlight">Conocimiento</span></h2>
+            <div class="cards-grid">
+                <div class="card glass">
+                    <div class="card-icon">📱</div>
+                    <h3>Programación Móvil</h3>
+                    <p>Desarrollo de aplicaciones nativas y multiplataforma con las últimas tecnologías.</p>
+                </div>
+                <div class="card glass">
+                    <div class="card-icon">🚀</div>
+                    <h3>Tecnologías Emergentes</h3>
+                    <p>IA, Blockchain, IoT y el futuro de la computación.</p>
+                </div>
+                <div class="card glass">
+                    <div class="card-icon">✨</div>
+                    <h3>Interfaces y Multimedia</h3>
+                    <p>Diseño UX/UI, experiencias inmersivas y medios digitales.</p>
+                </div>
+                <div class="card glass">
+                    <div class="card-icon">🌱</div>
+                    <h3>Ecología Tecnológica</h3>
+                    <p>Soluciones sostenibles impulsadas por la innovación digital.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="proyectos" class="section alt-bg">
+        <div class="container">
+            <h2 class="section-title">Proyectos <span class="highlight">Destacados</span></h2>
+            <div class="projects-grid">
+                <!-- Project Card 1 -->
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(45deg, #2b5876, #4e4376);"></div>
+                    <div class="project-info">
+                        <span class="tag">Móvil</span>
+                        <h3>App de Gestión Académica</h3>
+                        <p>Optimización de recursos estudiantiles mediante Flutter.</p>
+                        <a href="#" class="link-arrow">Ver Detalles →</a>
+                    </div>
+                </div>
+                <!-- Project Card 2 -->
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(45deg, #ec008c, #fc6767);"></div>
+                    <div class="project-info">
+                        <span class="tag">IA</span>
+                        <h3>Visión Artificial</h3>
+                        <p>Detección de objetos en tiempo real para seguridad.</p>
+                        <a href="#" class="link-arrow">Ver Detalles →</a>
+                    </div>
+                </div>
+                <!-- Project Card 3 -->
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(45deg, #00f260, #0575e6);"></div>
+                    <div class="project-info">
+                        <span class="tag">Eco</span>
+                        <h3>Monitoreo Ambiental</h3>
+                        <p>Sensores IoT para medición de calidad del aire.</p>
+                        <a href="#" class="link-arrow">Ver Detalles →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contacto">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h2>UIDE <span class="highlight">TICs</span></h2>
+                <p>Formando a los innovadores del mañana.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#">Github</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 UIDE TICs. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
 </body>
+
 </html>
