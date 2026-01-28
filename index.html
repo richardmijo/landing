@@ -32,40 +32,47 @@
     </nav>
 
     <header id="hero" class="hero-section">
+        <div class="hero-bg"></div>
         <div class="hero-content">
-            <h1 class="fade-in-up">Futuro <span class="gradient-text">Tecnológico</span></h1>
-            <p class="fade-in-up delay-1">Explora la innovación de nuestros estudiantes en la UIDE.</p>
-            <div class="cta-group fade-in-up delay-2">
-                <a href="#proyectos" class="btn-primary">Ver Proyectos</a>
-                <a href="#materias" class="btn-secondary">Explorar Materias</a>
+            <span class="hero-subtitle fade-in-up">Facultad de Ciencias Técnicas</span>
+            <h1 class="fade-in-up delay-1">Excelencia en <br><span class="highlight">Ingeniería & Innovación</span></h1>
+            <p class="fade-in-up delay-2">Un portafolio curado de proyectos que redefinen los límites de la tecnología
+                aplicada.</p>
+            <div class="cta-group fade-in-up delay-3">
+                <a href="#proyectos" class="btn-primary">Ver Portafolio</a>
             </div>
         </div>
-        <div class="hero-bg"></div>
+
+        <div class="scroll-indicator fade-in-up delay-3">
+            <span>Descubre Más</span>
+            <div class="mouse"></div>
+        </div>
     </header>
 
-    <section id="materias" class="section">
+    <section id="excelencia" class="section excellence-section">
         <div class="container">
-            <h2 class="section-title">Áreas de <span class="highlight">Conocimiento</span></h2>
-            <div class="cards-grid">
-                <div class="card glass">
-                    <div class="card-icon">📱</div>
-                    <h3>Programación Móvil</h3>
-                    <p>Desarrollo de aplicaciones nativas y multiplataforma con las últimas tecnologías.</p>
+            <div class="excellence-grid">
+                <div class="excellence-text">
+                    <h2 class="section-title-left">Visión Académica</h2>
+                    <p class="lead">Formamos líderes capaces de transformar la sociedad a través de la tecnología.</p>
+                    <p>Nuestros estudiantes no solo escriben código; diseñan soluciones para problemas reales. Cada
+                        proyecto en este portafolio representa horas de investigación, desarrollo y validación rigurosa
+                        bajo estándares internacionales.</p>
+
+                    <div class="stats-row">
+                        <div class="stat-item">
+                            <span class="stat-number">+50</span>
+                            <span class="stat-label">Proyectos Anuales</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Aplicación Real</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="card glass">
-                    <div class="card-icon">🚀</div>
-                    <h3>Tecnologías Emergentes</h3>
-                    <p>IA, Blockchain, IoT y el futuro de la computación.</p>
-                </div>
-                <div class="card glass">
-                    <div class="card-icon">✨</div>
-                    <h3>Interfaces y Multimedia</h3>
-                    <p>Diseño UX/UI, experiencias inmersivas y medios digitales.</p>
-                </div>
-                <div class="card glass">
-                    <div class="card-icon">🌱</div>
-                    <h3>Ecología Tecnológica</h3>
-                    <p>Soluciones sostenibles impulsadas por la innovación digital.</p>
+                <div class="excellence-image">
+                    <!-- Placeholder for a high-quality academic photo -->
+                    <div class="abstract-image-placeholder"></div>
                 </div>
             </div>
         </div>
@@ -73,36 +80,161 @@
 
     <section id="proyectos" class="section alt-bg">
         <div class="container">
-            <h2 class="section-title">Proyectos <span class="highlight">Destacados</span></h2>
-            <div class="projects-grid">
-                <!-- Project Card 1 -->
-                <div class="project-card">
-                    <div class="project-image" style="background: linear-gradient(45deg, #2b5876, #4e4376);"></div>
+            <div class="section-header text-center">
+                <h2 class="section-title">Portafolio de <span class="highlight">Proyectos</span></h2>
+                <p class="section-subtitle">Explora las soluciones desarrolladas por nuestras diferentes cátedras.</p>
+            </div>
+
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="movil">Móvil</button>
+                <button class="filter-btn" data-filter="web">Web & Cloud</button>
+                <button class="filter-btn" data-filter="ia">Inteligencia Artificial</button>
+                <button class="filter-btn" data-filter="iot">IoT & Electrónica</button>
+            </div>
+
+            <div class="projects-grid gallery-grid">
+                <!-- Project 1 -->
+                <div class="project-card" data-category="movil">
+                    <div class="project-image-container">
+                        <div class="project-image"
+                            style="background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);"></div>
+                        <div class="project-overlay">
+                            <span class="project-cat">Programación Móvil</span>
+                        </div>
+                    </div>
                     <div class="project-info">
-                        <span class="tag">Móvil</span>
-                        <h3>App de Gestión Académica</h3>
-                        <p>Optimización de recursos estudiantiles mediante Flutter.</p>
-                        <a href="#" class="link-arrow">Ver Detalles →</a>
+                        <h3>UIDE Student Hub</h3>
+                        <p>Plataforma integral para gestión académica estudiantil con integración de horario real.</p>
+                        <a href="#" class="link-details">Ver Proyecto</a>
                     </div>
                 </div>
-                <!-- Project Card 2 -->
-                <div class="project-card">
-                    <div class="project-image" style="background: linear-gradient(45deg, #ec008c, #fc6767);"></div>
+
+                <!-- Project 2 -->
+                <div class="project-card" data-category="ia">
+                    <div class="project-image-container">
+                        <div class="project-image"
+                            style="background: linear-gradient(135deg, #8E2DE2 0%, #4A00E0 100%);"></div>
+                        <div class="project-overlay">
+                            <span class="project-cat">Inteligencia Artificial</span>
+                        </div>
+                    </div>
                     <div class="project-info">
-                        <span class="tag">IA</span>
-                        <h3>Visión Artificial</h3>
-                        <p>Detección de objetos en tiempo real para seguridad.</p>
-                        <a href="#" class="link-arrow">Ver Detalles →</a>
+                        <h3>Vision Guard AI</h3>
+                        <p>Sistema de seguridad perimetral basado en visión por computador y alertas en tiempo real.</p>
+                        <a href="#" class="link-details">Ver Proyecto</a>
                     </div>
                 </div>
-                <!-- Project Card 3 -->
-                <div class="project-card">
-                    <div class="project-image" style="background: linear-gradient(45deg, #00f260, #0575e6);"></div>
+
+                <!-- Project 3 -->
+                <div class="project-card" data-category="iot">
+                    <div class="project-image-container">
+                        <div class="project-image"
+                            style="background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);"></div>
+                        <div class="project-overlay">
+                            <span class="project-cat">IoT</span>
+                        </div>
+                    </div>
                     <div class="project-info">
-                        <span class="tag">Eco</span>
-                        <h3>Monitoreo Ambiental</h3>
-                        <p>Sensores IoT para medición de calidad del aire.</p>
-                        <a href="#" class="link-arrow">Ver Detalles →</a>
+                        <h3>EcoMonitor Smart</h3>
+                        <p>Red de sensores IoT para el monitoreo de calidad del aire en campus universitarios.</p>
+                        <a href="#" class="link-details">Ver Proyecto</a>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card" data-category="web">
+                    <div class="project-image-container">
+                        <div class="project-image"
+                            style="background: linear-gradient(135deg, #FF416C 0%, #FF4B2B 100%);"></div>
+                        <div class="project-overlay">
+                            <span class="project-cat">Desarrollo Web</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Portal de Vinculación</h3>
+                        <p>Sistema web para la gestión de proyectos de vinculación con la sociedad.</p>
+                        <a href="#" class="link-details">Ver Proyecto</a>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card" data-category="movil">
+                    <div class="project-image-container">
+                        <div class="project-image"
+                            style="background: linear-gradient(135deg, #f12711 0%, #f5af19 100%);"></div>
+                        <div class="project-overlay">
+                            <span class="project-cat">Programación Móvil</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Rutas UIDE</h3>
+                        <p>App de transporte y movilidad para optimizar rutas de buses institucionales.</p>
+                        <a href="#" class="link-details">Ver Proyecto</a>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card" data-category="ia">
+                    <div class="project-image-container">
+                        <div class="project-image"
+                            style="background: linear-gradient(135deg, #00B4DB 0%, #0083B0 100%);"></div>
+                        <div class="project-overlay">
+                            <span class="project-cat">Inteligencia Artificial</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Chatbot Académico</h3>
+                        <p>Asistente virtual basado en NLP para resolución de dudas administrativas.</p>
+                        <a href="#" class="link-details">Ver Proyecto</a>
+                    </div>
+                </div>
+
+                <!-- Project 7 -->
+                <div class="project-card" data-category="web">
+                    <div class="project-image-container">
+                        <div class="project-image"
+                            style="background: linear-gradient(135deg, #8360c3 0%, #2ebf91 100%);"></div>
+                        <div class="project-overlay">
+                            <span class="project-cat">Cloud Computing</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Cloud Library</h3>
+                        <p>Repositorio digital de tesis y papers académicos con arquitectura serverless.</p>
+                        <a href="#" class="link-details">Ver Proyecto</a>
+                    </div>
+                </div>
+
+                <!-- Project 8 -->
+                <div class="project-card" data-category="iot">
+                    <div class="project-image-container">
+                        <div class="project-image"
+                            style="background: linear-gradient(135deg, #F2994A 0%, #F2C94C 100%);"></div>
+                        <div class="project-overlay">
+                            <span class="project-cat">IoT</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Smart Lab</h3>
+                        <p>Sistema de control de acceso y automatización de laboratorios de computación.</p>
+                        <a href="#" class="link-details">Ver Proyecto</a>
+                    </div>
+                </div>
+
+                <!-- Project 9 -->
+                <div class="project-card" data-category="movil">
+                    <div class="project-image-container">
+                        <div class="project-image"
+                            style="background: linear-gradient(135deg, #c31432 0%, #240b36 100%);"></div>
+                        <div class="project-overlay">
+                            <span class="project-cat">Programación Móvil</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Eventos UIDE</h3>
+                        <p>Aplicación social para el networking en congresos y eventos universitarios.</p>
+                        <a href="#" class="link-details">Ver Proyecto</a>
                     </div>
                 </div>
             </div>
